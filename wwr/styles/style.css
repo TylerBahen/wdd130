@@ -182,6 +182,10 @@ main section {
     width: 80px;
 }
 
+.logo {
+  width: 100px;
+}
+
 #hero-img {
     width: 100%;
 }
