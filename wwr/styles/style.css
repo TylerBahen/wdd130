@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto&display=swap');
+:root {
+  --primary-color: #e7ecef   ;
+  --secondary-color: #274c77 ;
+  --accent1-color: #6096ba;
+  --accent2-color: #a3cef1;
+
+  --heading-font: "Racing Sans One";
+  --paragraph-font: Roboto, Arial, sans-serif;
+
+  --headline-color-on-white: #274c77;  /* headlines on a white background */ 
+  --headline-color-on-color: #e7ecef; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #274c77; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #e7ecef; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #396E94  ;
+  --nav-link-color: #e7ecef;
+  --nav-background-color: #274c77;
+  --nav-hover-link-color: #274c77;
+  --nav-hover-background-color: #a3cef1;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h2 {
+  text-align: center;
+  margin: 0;
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+}
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td{
+  width: 25%;
+  height: 3em;
+}
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid var(--accent1-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav  {
+  list-style-type: none;
+  display: flex;
+}
+nav a {
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.book, .join {
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.book, .join {
+  color: var(--nav-link-color);
+  background-color: var(--nav-background-color);
+}
+.book:hover, .join:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.book {
+    border-radius: 5px;
+}
+
+.msg {
+    margin-top: 100px;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    margin-top: 20%;
+}
+
+footer a {
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+}
+footer p a:link, footer p a:visited {
+  color: var(--nav-link-color);
+}
+footer p a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+#hero {
+    border: 5px solid var(--paragraph-background-color);
+    padding-bottom: 20px;
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+.icon {
+    filter: hue-rotate(120deg) saturate(5);
+    width: 80px;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#background {
+    height: 725px;
+    background-color: var(--primary-color);
+}
+
+.social img {
+    border-radius: 5px;
+}
