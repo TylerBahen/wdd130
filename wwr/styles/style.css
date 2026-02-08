@@ -40,7 +40,7 @@ hr {
 header {
   padding: 0em;
   text-align: center;
-  color: var(--headline-color-on-color);
+  color: var(--nav-background-color);
   background-color: var(--paragraph-background-color);
   display: grid;
   grid-template-columns: 150px auto;
