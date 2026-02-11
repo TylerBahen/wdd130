@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box" id="table">
+        <b>Speaker</b>
+        <b>Title</b>
+        <b>Location</b>
+        <b>Year</b>
+      </div>
+      <div class="form-box">
+        <form id="form">
+          <input type="text" id="speaker" placeholder="Speaker">
+          <input type="text" id="title" placeholder="Title">
+          <input type="text" id="location" placeholder="Location">
+          <input type="text" id="year" placeholder="Year">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </div>
+  <script>
+    var form = document.getElementById('form')
+    console.log(form)
+    form.addEventListener('submit', (event) => {
+      event.preventDefault()
+      var speaker = document.getElementById('speaker').value
+      document.getElementById('speaker').value = ''
+      var title = document.getElementById('title').value
+      document.getElementById('title').value = ''
+      var location = document.getElementById('location').value
+      document.getElementById('location').value = ''
+      var year = document.getElementById('year').value
+      document.getElementById('year').value = ''
+      document.getElementById('table').innerHTML += `<p>${speaker}</p><p>${title}</p><p>${location}</p><p>${year}</p>`
+    });
+  </script>
+</body>
+</html>
