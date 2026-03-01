@@ -50,7 +50,7 @@ main {
     padding:2%;
 }
 
-section {
+.box {
     margin: auto;
     height:80%;
     width: 90%;
@@ -59,7 +59,7 @@ section {
     font-size: x-large;
 }
 
-section img {
+.box img {
     float: right;
     margin: 10px;
     border: 5px ridge #F0FFFF;
