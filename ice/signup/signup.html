@@ -20,12 +20,11 @@
             border-radius: 20px;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 200px 50px 1fr;
+            grid-template-rows: 200px 50px 1fr auto;
             margin: auto;
             margin-top:50px;
-            margin-bottom: 10%;
             width: 400px;
-            height: 600px;
+            height: 700px;
         }
 
         #hero {
@@ -46,9 +45,9 @@
             background-color: white;
             width: 100%;
             grid-column: 1/6;
-            border-radius: 0px 0px 13px 13px;
             display: flex;
             flex-direction: column;
+            gap: 20px;
         }
         #closeBtn {
             position: absolute;
@@ -74,9 +73,24 @@
         section {
             text-align: center;
             height:25px;
+            display: inline-block;
+        }
+        section input {
+            width: auto;
+            float:none;
         }
         #glabel {
             width: 50%;
+        }
+        #neville {
+            border-radius: 0px 0px 13px 13px;
+            grid-column: 1/6;
+            background-color: white;
+            display: flex;
+            gap:5px;
+        }
+        #neville img{
+            width: 76px;
         }
     </style>
 
@@ -124,7 +138,13 @@
                 <button type="submit">Submit</button>
             </section>
         </form>
-        <div id="neville"></div>
+        <div id="neville">
+            <img src="images\old_testament.webp" alt="">
+            <img src="images\new_testament.webp" alt="">
+            <img src="images\book_of_mormon.webp" alt="">
+            <img src="images\pearl_of_great_price.webp" alt="">
+            <img src="images\doctrine_and_covenants.webp" alt="">
+        </div>
     </div>
 
     <div id="output"></div>
