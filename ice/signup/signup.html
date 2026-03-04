@@ -47,6 +47,36 @@
             width: 100%;
             grid-column: 1/6;
             border-radius: 0px 0px 13px 13px;
+            display: flex;
+            flex-direction: column;
+        }
+        #closeBtn {
+            position: absolute;
+            top:60px;
+            margin-left:5px;
+        }
+        input {
+            width: 50%;
+            float: right;
+        }
+        #gender {
+            display: block;
+        }
+        #gender input {
+            float: none;
+            width:auto;
+            display: inline-block;
+        }
+        #gender label {
+            display: inline-block;
+            margin-right: 1rem;
+        }
+        section {
+            text-align: center;
+            height:25px;
+        }
+        #glabel {
+            width: 50%;
         }
     </style>
 
@@ -60,20 +90,22 @@
         <h3>Sign Up for Daily Scripture Feed</h3>
         <form id="myForm">
             <button type="button" id="closeBtn">X</button>
+            <div>
             <label for="username">User Name:</label>
             <input type="text" id="username" name="username" required>
-            
+            </div>
+            <div>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-
+            </div>
+            <div>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            
-            <label>Gender:</label>
+            </div>
             <div id="gender">
+            <label id="glabel">Gender:</label>
                 <input type="radio" id="male" name="gender" value="male" required>
                 <label for="male">Male</label>
-                <br>
                 <input type="radio" id="female" name="gender" value="female" required>
                 <label for="female">Female</label>
             </div>
